@@ -8,8 +8,8 @@
 </head>
 <body>
 
-
-
+     
+ 
     <div class="header"> 
         <h1>Welcome to weather Forcast</h1>
     </div>
@@ -24,51 +24,50 @@
                  <input type="text" placeholder="....">
                 <button>Search</button>
             </form>
-            
-            <div><img src="Untitled design.png" alt="" class="image"></div>
-            <div><img src="Untitled design (1).png" alt="" class="imgge_2"></div>
-            <div><img src="Untitled design (2).png" alt="" class="logo-maroc"></div>
-            
+         
         </div>
 
          <div class="name-city">
-             <h2>Agadir</h2>
+             <h2>city <span id="city"></span></h2>
              <p>Saturday,june AT 12.20 Am</p>
          </div>
          
          <div>
          <div class="weather-temp">
-             <h3>43C</h3>
-             <img src="" alt="icon_weather">
+             <h3>Temperature: <span id="temp"></span></h3>
+             <img src="" alt="icon_weather" id="icon_weather">
              
          </div>
          <div class="border-color"></div>
          </div>
 
          <div class="description">
-             <h2>Overcast Clouds</h2>
+             <h2>Description: <span id="description"></span></h2>
          </div>
 
          <div class="spe_hum">
              <div>
-                <span>Speed</span>
-                <span>234</span>
+                <span>speed:</span>
+                <span id="speed"></span>
              </div>
 
              <div>
                  <span>humidity</span>
-                 <span>445A</span>ù
+                 <span id="humidity"></span> 
              </div>
          </div>
 
         <div class="Country">
               <div class="Country_weather">
-             <h4>Country:</h4>
+             <h4>Country:  <span id="country"></span></h4>
          </div>
         </div>
+         
+
       </section>
 
    </main>
-
+   
+   <script src="main.js"></script>
 </body>
 </html>

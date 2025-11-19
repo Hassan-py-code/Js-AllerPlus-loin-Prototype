@@ -3,7 +3,7 @@
 
 
 body{
-    background-image: url(images/nature.jpeg);
+    background-image: url(nature\ \(2\).jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,6 @@ body{
 }
 
 
-
 main{
 
     display: flex;
@@ -57,9 +56,7 @@ main{
 main section{
      background-color:#F0F8FF;
      padding: 1.8rem 10px;
-     border-radius: 10px;
-     /* width: 400px; */
-       
+     border-radius: 10px;   
 }
 
 main form{
@@ -72,7 +69,6 @@ main form button{
      background-color: transparent;
      border: 3px solid var(--card);
      outline: none;
-     /* border-radius: 5px; */
      margin-left: 6px;
 }
 
@@ -80,16 +76,13 @@ main form button{
    text-align: center;
 }
 
-/* .name-city h2{
-     font-size: 30px;
-} */
 
 .weather-temp{
      display: flex;
      align-items: center;
      justify-content: space-evenly;
      background-color: var(--card);
-     padding: 1.5rem  5rem;
+     padding: 1rem  5rem;
      width: 250px;
 }
 
@@ -103,26 +96,6 @@ main form button{
     position: relative;
 }
 
-.image{
-    width: 140px;
-     position: absolute;
-    top: -299%;
-    left: 83%;
-}
-
-.imgge_2{
-     width: 140px;
-    position: absolute;
-    top: -299%;
-    left:-45px;
-}
-
-.logo-maroc{
-     width: 300px;
-     position: absolute;
-    top: -600%;
-    left:30px;
-}
 
 .description{
      text-align: center;
@@ -134,20 +107,21 @@ main form button{
     justify-content: space-around;
 }
 
+#icon_weather{
+      width: 130px;
+}
 
 .spe_hum div{
      border: 2px  solid var(--card);
-     padding: 1% 40px;
+     padding: 2% 40px;
      margin: 10px;
-     
 }
 
 .Country{
      position: relative;
 }
+
 .Country_weather{
-    /* position: absolute;
-    top: -50px; */
      background-color: var(--card);
      margin-top: 20px;
      text-align: center;
