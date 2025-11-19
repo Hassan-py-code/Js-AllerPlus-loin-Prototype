@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-image: url(images/nature.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jersey 25" , sans-serif;
+}
+
+:root{
+     --card:#4AA8FF;
+     --black:#00000000;
+     --white:#ffff;
+}
+
+.header{
+     background-color: var(--card);
+     padding: 0.2px;
+     border-bottom: 2px solid var(--white) ;
+     text-align: center;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+     /* display: none; */
+}
+
+.header h1{
+     color: var(--white);
+     font-weight: 500;
+}
+
+
+
+.header img{
+     width: 150px;
+}
+
+
+
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+main section{
+     background-color:#F0F8FF;
+     padding: 1.8rem 10px;
+     border-radius: 10px;
+     /* width: 400px; */
+       
+}
+
+main form{
+    margin-top: 20px;
+}
+
+main form input,
+main form button{
+     padding: 0.5rem 40px;
+     background-color: transparent;
+     border: 3px solid var(--card);
+     outline: none;
+     /* border-radius: 5px; */
+     margin-left: 6px;
+}
+
+.name-city{
+   text-align: center;
+}
+
+/* .name-city h2{
+     font-size: 30px;
+} */
+
+.weather-temp{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     background-color: var(--card);
+     padding: 1.5rem  5rem;
+     width: 250px;
+}
+
+.border-color{
+     background-color:var(--white);
+     padding: 2px ; 
+     width: 406px;
+}
+
+.form_content{
+    position: relative;
+}
+
+.image{
+    width: 140px;
+     position: absolute;
+    top: -299%;
+    left: 83%;
+}
+
+.imgge_2{
+     width: 140px;
+    position: absolute;
+    top: -299%;
+    left:-45px;
+}
+
+.logo-maroc{
+     width: 300px;
+     position: absolute;
+    top: -600%;
+    left:30px;
+}
+
+.description{
+     text-align: center;
+}
+
+.spe_hum{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.spe_hum div{
+     border: 2px  solid var(--card);
+     padding: 1% 40px;
+     margin: 10px;
+     
+}
+
+.Country{
+     position: relative;
+}
+.Country_weather{
+    /* position: absolute;
+    top: -50px; */
+     background-color: var(--card);
+     margin-top: 20px;
+     text-align: center;
+     padding: 0.1rem  5rem;
+     width: 250px;
+}
