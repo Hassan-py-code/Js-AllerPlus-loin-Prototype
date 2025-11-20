@@ -2,7 +2,7 @@
 let image = document.querySelector("img");
 let form = document.querySelector("form");
 let input = document.querySelector("input");
-let date=document.querySelector('.date');
+let date = document.querySelector('.date');
 
 let my_date=new Date();
 date.textContent=my_date;
@@ -20,7 +20,6 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=24
 .then(response=> response.json())
 .then(data => {
      
-
      function use_data_api(){
   
         let icon_data=data.weather[0].icon;

@@ -13,7 +13,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Jersey 25" , sans-serif;
-    backdrop-filter: blur(1px);
 }
 
 :root{
@@ -22,15 +21,7 @@ body{
      --white:#ffff;
 }
 
-header{
-      display: flex;
-      justify-content: center;
-}
 
-header img{
-      width: 400px;
-
-}
 
 /* styling main  */
 main{
@@ -59,7 +50,7 @@ main form input{
      background-color: var(--card);
      border: 3px solid var(--white);
      outline: none;
-     margin-left: 6px;
+     margin-left: 10px;
      font-weight: 700;
 }
 
@@ -87,7 +78,7 @@ main form button{
 
 
 /* style dive weather temp */
-.weather-temp{
+.weather-temp {
      display: flex;
      align-items: center;
      justify-content: space-evenly;
@@ -103,7 +94,7 @@ main form button{
       font-weight: 400;
 }
 .weather-temp h3 span{
-       font-family: "Jersey 25" , sans-serif;
+       font-family: "Jersey 25" , sans-serif ;
 }
 
 #icon_weather{
@@ -152,7 +143,7 @@ main form button{
      margin-top: 20px;
      text-align: center;
      padding: 0.1rem  5rem;
-     width: 250px;
+     /* width: 250px; */
 }
 
 .Country_weather h4 #country{
