@@ -4,47 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- link icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+           <!-- link font icon  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Weather</title>
 </head>
 <body>
-
-     
+   
  
-    <div class="header"> 
-        <h1>Welcome to weather Forcast</h1>
-    </div>
-    
+
    <main> 
    
       <section>
-        
+         
+        <!-- form -->
          <div class="form_content">
 
             <form action="">
-                 <input type="text" placeholder="....">
-                <button>Search</button>
+                 <input type="text" placeholder="">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-         
+        
         </div>
-
+        
+         <!-- city name -->
          <div class="name-city">
-             <h2>city <span id="city"></span></h2>
-             <p>Saturday,june AT 12.20 Am</p>
+             <h2>city: <span id="city"></span></h2>
+             <p class="date"></p>
          </div>
          
-         <div>
          <div class="weather-temp">
              <h3>Temperature: <span id="temp"></span></h3>
              <img src="" alt="icon_weather" id="icon_weather">
              
          </div>
          <div class="border-color"></div>
-         </div>
-
+         
          <div class="description">
              <h2>Description: <span id="description"></span></h2>
          </div>
-
+         
+         <!-- speed humidity -->
          <div class="spe_hum">
              <div>
                 <span>speed:</span>
@@ -57,10 +58,9 @@
              </div>
          </div>
 
-        <div class="Country">
-              <div class="Country_weather">
-             <h4>Country:  <span id="country"></span></h4>
-         </div>
+         <!-- country  -->
+        <div class="Country_weather">
+             <h4> Country:  <span id="country"></span></h4>
         </div>
          
 

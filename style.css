@@ -13,6 +13,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Jersey 25" , sans-serif;
+    backdrop-filter: blur(1px);
 }
 
 :root{
@@ -21,85 +22,115 @@ body{
      --white:#ffff;
 }
 
-.header{
-     background-color: var(--card);
-     padding: 0.2px;
-     border-bottom: 2px solid var(--white) ;
-     text-align: center;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 999;
-     /* display: none; */
+header{
+      display: flex;
+      justify-content: center;
 }
 
-.header h1{
-     color: var(--white);
-     font-weight: 500;
+header img{
+      width: 400px;
+
 }
 
-
-
-.header img{
-     width: 150px;
-}
-
-
+/* styling main  */
 main{
 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 3%;
 }
 
+/* after create style inside main  is section */
 main section{
      background-color:#F0F8FF;
      padding: 1.8rem 10px;
      border-radius: 10px;   
+     border-left: 4px solid  black;
+     box-shadow: 0 0 10px #F0F8FF;
 }
 
 main form{
     margin-top: 20px;
 }
 
-main form input,
-main form button{
+main form input{
      padding: 0.5rem 40px;
-     background-color: transparent;
-     border: 3px solid var(--card);
+     background-color: var(--card);
+     border: 3px solid var(--white);
      outline: none;
      margin-left: 6px;
+     font-weight: 700;
 }
 
+main form button{
+     background-color: var(--card);
+      padding: 0.5rem 40px;
+      border: 3px solid var(--white);
+      cursor: pointer;
+}
+
+
+/* style div namecity */
 .name-city{
    text-align: center;
 }
 
+.name-city h2{
+     font-family: 'Kaushan Script', cursive;
+}
 
+.name-city h2 #city{
+      font-family: "Jersey 25" , sans-serif;
+      font-weight: 500;
+}
+
+
+/* style dive weather temp */
 .weather-temp{
      display: flex;
      align-items: center;
      justify-content: space-evenly;
      background-color: var(--card);
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
      padding: 1rem  5rem;
      width: 250px;
 }
 
+.weather-temp h3{
+      font-family: 'Kaushan Script', cursive;
+      font-weight: 400;
+}
+.weather-temp h3 span{
+       font-family: "Jersey 25" , sans-serif;
+}
+
+#icon_weather{
+      width: 130px;
+}
+
 .border-color{
-     background-color:var(--white);
+     background-color:black;
      padding: 2px ; 
      width: 406px;
 }
 
-.form_content{
-    position: relative;
-}
+
 
 
 .description{
      text-align: center;
 }
+
+.description h2{
+      font-family: 'Kaushan Script', cursive;
+}
+.description h2 span{
+       font-family: "Jersey 25" , sans-serif;
+       font-weight: 500;
+}
+
 
 .spe_hum{
     display: flex;
@@ -107,9 +138,7 @@ main form button{
     justify-content: space-around;
 }
 
-#icon_weather{
-      width: 130px;
-}
+
 
 .spe_hum div{
      border: 2px  solid var(--card);
@@ -117,9 +146,6 @@ main form button{
      margin: 10px;
 }
 
-.Country{
-     position: relative;
-}
 
 .Country_weather{
      background-color: var(--card);
@@ -127,4 +153,8 @@ main form button{
      text-align: center;
      padding: 0.1rem  5rem;
      width: 250px;
+}
+
+.Country_weather h4 #country{
+      font-weight: 500;
 }
